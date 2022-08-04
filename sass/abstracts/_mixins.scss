@@ -1,0 +1,38 @@
+@mixin centered {
+	width: min(100% - 2.5rem, 75rem);
+	margin-inline: auto;
+}
+
+@mixin flexCentered($direction) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: $direction;
+}
+
+@mixin button {
+	border: none;
+	outline: none;
+	border-radius: 60px;
+}
+
+@mixin flexContentAlign($x, $y) {
+	align-items: $x;
+	justify-content: $y;
+}
+
+@mixin flexSelfAlign($x, $y) {
+	align-self: $x;
+	justify-self: $y;
+}
+
+@mixin bgPos2() {
+	background-position: top center, bottom center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+@mixin padd-bl-in($bl, $in) {
+	padding-block: $bl;
+	padding-inline: $in;
+}

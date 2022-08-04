@@ -1,0 +1,39 @@
+@use "../abstracts/colors" as *;
+
+$poppins: "Poppins", sans-serif; //600
+$openSans: "Open Sans", sans-serif; //400, 600, 700
+$p_fs_rspnsv: clamp(0.9rem, 2vw + 0.3rem, 1.3rem);
+
+h1,
+h2,
+h3 {
+	font-family: $poppins;
+	font-weight: 800;
+	color: $Very-Dark-Cyan;
+}
+
+p {
+	color: $Very-Dark-Cyan;
+	font-size: 0.9rem;
+	// font-weight: 600;
+}
+
+p,
+button {
+	font-family: $openSans;
+}
+
+.container {
+	&.one {
+		.texts {
+			h1 {
+				font-size: clamp(0.9rem, 4vw + 0.5rem, 3rem);
+			}
+
+			p {
+				max-width: 38rem;
+				font-size: clamp(0.9rem, 2vw + 0.3rem, 1.28rem);
+			}
+		}
+	}
+}

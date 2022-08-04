@@ -1,0 +1,38 @@
+@use "../abstracts/" as *;
+
+header {
+	width: min(100% - 2.5rem, 1300px);
+	margin-inline: auto;
+	@include flexCentered(row);
+	justify-content: space-between;
+	padding: 1.5rem 0;
+	padding-block: 5.5%;
+
+	img {
+		width: 30%;
+		max-width: 15rem;
+	}
+
+	button {
+		border: 1px solid $Pink;
+		border-radius: 40px;
+		background-color: transparent;
+		padding: 0.2rem 1rem;
+		color: $Pink;
+		font-size: clamp(0.05rem, 1.5vw + 0.3rem, 1rem);
+
+		&:hover {
+			border: 1px solid $headerBtn;
+			color: $headerBtn;
+		}
+	}
+}
+
+@include lg {
+	header {
+		button {
+			padding-inline: 1.6rem;
+			padding-block: 0.4rem;
+		}
+	}
+}

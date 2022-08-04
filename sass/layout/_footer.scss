@@ -1,0 +1,73 @@
+@use "../abstracts/" as *;
+
+.footer {
+	padding-block: 3rem;
+	padding-inline: 0.5rem;
+	@include md {
+		padding-block: 7rem;
+	}
+
+	.get_in_touch {
+		@include flexSelfAlign(flex-start, flex-start);
+		.logo_and_texts {
+			img {
+				width: 13rem;
+			}
+
+			p {
+				max-width: 21rem;
+				margin-top: 1rem;
+				font-size: clamp(0.6rem, 2vw + 0.5rem, 1rem);
+			}
+		}
+
+		.contact,
+		.sm {
+			margin-top: 2rem;
+		}
+
+		.contact > * {
+			margin-top: 1rem;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		.contact > * {
+			@include flexCentered(row);
+			@include flexContentAlign(flex-start, flex-start);
+			gap: 1rem;
+		}
+
+		.sm {
+			@include md {
+				margin-top: 4rem;
+			}
+
+			a {
+				display: block;
+
+				img {
+					float: left;
+					margin-right: 1rem;
+					width: 10%;
+					transition: 0.5s ease-in-out;
+
+					&:hover {
+						filter: $hv_icon;
+					}
+				}
+			}
+		}
+	}
+
+	.attribution {
+		position: absolute;
+		bottom: 10px;
+
+		a {
+			color: $Very-Pale-Blue;
+		}
+	}
+}

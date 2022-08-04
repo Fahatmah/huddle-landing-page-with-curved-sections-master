@@ -1,0 +1,47 @@
+@use "../abstracts/" as *;
+
+body {
+	color: $Very-Dark-Cyan;
+
+	section,
+	footer {
+		width: 100%;
+	}
+
+	.container {
+		@include centered;
+		@include flexCentered(column);
+		text-align: center;
+	}
+
+	button,
+	footer {
+		color: $Very-Pale-Blue;
+
+		img {
+			filter: brightness(0) invert(1);
+		}
+	}
+
+	.bg_footer {
+		background-color: $Very-Dark-Cyan;
+
+		.container {
+			gap: 6.5rem;
+			text-align: left;
+			@include sm {
+				justify-content: space-between;
+				flex-direction: row-reverse;
+			}
+
+			h3,
+			p {
+				color: $Very-Pale-Blue;
+			}
+
+			p {
+				line-height: 1.8;
+			}
+		}
+	}
+}

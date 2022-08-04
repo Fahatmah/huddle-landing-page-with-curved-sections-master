@@ -1,0 +1,19 @@
+@use "../abstracts/" as *;
+
+.container {
+	button {
+		@include button;
+		transition: 0.3s ease-in-out;
+		background-color: $Pink;
+		@include padd-bl-in(0.7rem, 2rem);
+		font-size: $p_fs_rspnsv;
+		box-shadow: 0 2px 10px rgba(black, 0.3);
+		@include md {
+			@include padd-bl-in(1.5rem, 6rem);
+		}
+
+		&:hover {
+			background-color: $headerBtn;
+		}
+	}
+}
