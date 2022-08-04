@@ -24,9 +24,11 @@ body {
 	}
 
 	.bg_footer {
+		position: relative;
 		background-color: $Very-Dark-Cyan;
 
 		.container {
+			position: relative;
 			gap: 6.5rem;
 			text-align: left;
 			@include sm {

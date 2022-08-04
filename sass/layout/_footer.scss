@@ -1,6 +1,7 @@
 @use "../abstracts/" as *;
 
 .footer {
+	position: relative;
 	padding-block: 3rem;
 	padding-inline: 0.5rem;
 	@include md {
@@ -59,15 +60,6 @@
 					}
 				}
 			}
-		}
-	}
-
-	.attribution {
-		position: absolute;
-		bottom: 10px;
-
-		a {
-			color: $Very-Pale-Blue;
 		}
 	}
 }
