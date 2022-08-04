@@ -15,7 +15,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Huddle Landing Page With Curved Sections]()
+- Live Site URL: [Huddle Landing Page With Curved Sections](https://huddle-landing-page-with-curved-section-frontend.netlify.app/)
 
 ## My process
 This challenged myself for three days and somewhat I want the layout to be exact as the design. My SCSS was kind of messy because of the media queries and each day was making sure the responsiveness and the sizes of the elements but as long as I learned, making pixel perfect is a bonus. 
